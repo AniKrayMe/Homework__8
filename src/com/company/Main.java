@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Scanner;
 
 public class Main {
 
@@ -31,10 +31,33 @@ public class Main {
         ArrayList<String> joined = new ArrayList<>();
         joined.addAll(colors);
         joined.addAll(colors2);
-        System.out.print("colors + colors2 = ");
+        System.out.print("joined = ");
         for (int i = 0; i <joined.size(); i++) {
             System.out.print(joined.get(i) + ", ");
         }
+        System.out.println();
+        System.out.println("Print Clear.array if you want delete array ");
+        Scanner scanner = new Scanner(System.in);
+        String array =scanner.next();
+        switch (array){
+            case "Clear.color":
+                colors.clear();
+                System.out.print("array list color emptied ");
+                break;
+
+            case "Clear.color2":
+                colors2.clear();
+                System.out.print("array list color2 emptied ");
+                break;
+
+            case "Clear.joined":
+                joined.clear();
+                System.out.print("array list joined emptied ");
+                break;
+            default:
+                System.out.println("Incorrect 'Clear.array' ");
+        }
+
     }
 }
 
