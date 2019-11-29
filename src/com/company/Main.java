@@ -11,9 +11,10 @@ public class Main {
         colors.add("Blue");
         colors.add("Yellow");
         colors.add("Red");
-        colors.remove(2);
-        for (int i = 0; i < colors.size(); i++) {
-            System.out.print(colors.get(i) + ", ");
+        ArrayList<String> colors2 = new ArrayList<>();
+        colors2 = colors;
+        for (int i = 0; i < colors2.size(); i++) {
+            System.out.print(colors2.get(i) + ", ");
         }
     }
 }
