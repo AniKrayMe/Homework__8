@@ -29,7 +29,7 @@ public class Main {
         animal.setDogs(dogs);
         System.out.print("Dogs =  ");
         for (int i = 0; i <animal.getDogs().size(); i++) {
-            System.out.print( animal.getDogs().get(i).getBreed() + ", ");
+            System.out.print( animal.getDogs().get(i).getBreed() + ",2 ");
 
         }
     }
