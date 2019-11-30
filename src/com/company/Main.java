@@ -5,26 +5,22 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>();
-        numbers.add(2);
-        numbers.add(5);
-        numbers.add(135);
-        numbers.add(222);
-        numbers.add(456);
-        numbers.add(22);
-        numbers.add(10);
-        numbers.add(85);
-        numbers.add(355);
-        System.out.print("numbers = ");
-        for (int i = 0; i < numbers.size(); i++) {
-            System.out.print(numbers.get(i) + ", ");
-        }
-        System.out.println();
-        System.out.print("Without even numbers = ");
-        for (int i = 0; i < numbers.size(); i++) {
-            if (numbers.get(i) % 2 == 0) {
-                System.out.print(numbers.get(i) + ", ");
-            }
+        ArrayList<Dog> dogs = new ArrayList<>();
+        Dog dog1 = new Dog("Labrador Retriever");
+        Dog dog2 = new Dog("German Shepherd");
+        Dog dog3 = new Dog("Golden Retriever");
+        Dog dog4 = new Dog("Bulldog");
+        Dog dog5 = new Dog("Rottweiler");
+        Dog dog6 = new Dog("Boxer");
+        dogs.add(dog1);
+        dogs.add(dog2);
+        dogs.add(dog3);
+        dogs.add(dog4);
+        dogs.add(dog5);
+        dogs.add(dog6);
+        System.out.print("dogs = ");
+        for (int i = 0; i < dogs.size(); i++) {
+            System.out.print(dogs.get(i).getBreed()+ ", ");
         }
     }
 }
