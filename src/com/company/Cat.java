@@ -1,14 +1,14 @@
 package com.company;
 
-public class Dog {
+public class Cat {
     private String breed;
 
     //region Constructor
-    public Dog(String breed) {
+    public Cat(String breed) {
         this.breed = breed;
     }
 
-    public Dog() {
+    public Cat() {
     }
     //endregion
 
