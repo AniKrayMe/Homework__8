@@ -1,18 +1,20 @@
 package com.company;
 
-public class Cat {
+public class Dog {
     private String breed;
 
-    public Cat(String breed) {
+    public Dog(String breed) {
         this.breed = breed;
     }
 
-    public Cat() {
+    public Dog() {
     }
 
     public String getBreed() {
         return breed;
     }
 
-    public void setBreed(String breed) { this.breed = breed; }
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 }
